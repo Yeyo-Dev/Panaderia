@@ -1,0 +1,70 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: mediumturquoise;
+        cursor: url("http://localhost/Panaderia/imagenes/cursor.png"), pointer;
+    }
+    
+    header {
+        background-color: whitesmoke;
+    }
+    
+    .FRMLogin {
+        margin-top: 10%;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 5px;
+    }
+    
+    .FRMLogin p {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    input {
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 4px;
+        width: 50%;
+        border-radius: 12px;
+        border: none;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    input:hover {
+        background-color: rgba(0, 238, 255, 0.986);
+    }
+    
+    .icono {
+        position: static;
+        width: 85%;
+        block-size: auto;
+    }
+    
+    .btn-login {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 4px;
+        width: 15%;
+        border: none;
+        color: darkcyan;
+        border-radius: 13px;
+        background-color: cyan;
+        position: static;
+    }
+    
+    .btn-login:hover {
+        background-color: teal;
+        color: whitesmoke;
+    }

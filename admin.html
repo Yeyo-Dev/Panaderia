@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administracion</title>
+    <link rel="stylesheet" href="Style/admin.css" />
+</head>
+
+<body>
+    <div class="FRMBotones">
+        <button class="pestañas" id="add-tap" onclick="FAgregar()">
+        Agregar
+      </button>
+        <button class="pestañas" id="show-tap" onclick="FMostrar()">
+        Mostrar Datos
+      </button>
+        <button class="pestañas" id="closeall" onclick="window.history.back();">X</button>
+    </div>
+    <main>
+        <div class="FRMAdminIngresar" id="FRMAdminIngresar">
+            <form id="FRMAdmin">
+                <p>Cuentas:</p>
+                <select required=" " name="Cuentas" id="Cuentas">
+            <option value=""></option>
+            <option value="AC1">Caja</option>
+            <option value="AC2">Bancos</option>
+            <option value="AC3">Inversiones temporales</option>
+            <option value="AC4">Inventario</option>
+            <option value="AC5">Cliente</option>
+            <option value="AC6">Documentos por cobrar</option>
+            <option value="AC7">Deudores diversos</option>
+            <option value="AC8">Anticipo a proveedores</option>
+            <option value="AF1">Terrenos</option>
+            <option value="AF2">Edificios</option>
+            <option value="AF3">Mobiliario Y Equipo</option>
+            <option value="AF4">Equipo de Computo Y Electronico</option>
+            <option value="AF5">Equipo de Entrega o Reparto</option>
+            <option value="AF6">Depositos en Garantia</option>
+            <option value="AF7">Inversiones Permanentes</option>
+            <option value="AD1">Gastos e Investigacion de Desarrollo</option>
+            <option class="min" value="AD2">Gastos en etapas preoperativas de Organizacion Y administracion</option>
+            <option value="AD3">Gastos de Mercadotecnia</option>
+            <option value="AD4">Gastos de Organizacion</option>
+            <option value="AD5">Gastos de Instalacion</option>
+            <option value="AD6">Papeleria Y Utiles</option>
+            <option value="AD7">Propaganda Y Publicidad</option>
+            <option value="AD8">Primas de Seguros</option>
+            <option value="AD9">Rentas pagadas por anticipado</option>
+            <option value="AD10">Intereses pagados por anticipado</option>
+          </select>
+                <p>Valor:</p>
+                <input required=" " autocomplete="off" type="number" name="valor" id="valor" maxlength="5" />
+                <script>
+                    let f = new Date();
+                    let dia = f.getDate();
+                    if(dia < 10){
+                        dia = `0${f.getDate()}`
+                    } 
+                    let fecha =
+                        f.getFullYear() + "-" + (f.getMonth() + 1) + "-" + dia;
+                    let VFecha = `<p>Fecha:</p><input required=" " type="date" name="Fecha" id="Fecha" value="${fecha}">`;
+                    document
+                        .getElementById("valor")
+                        .insertAdjacentHTML("afterend", VFecha);
+                </script>
+                <p>
+                    <button class="button" id="Guardar" type="submit">Guardar</button>
+                </p>
+            </form>
+        </div>
+
+        <center>
+            <form class="b-form" id="b-form">
+                <input class="search" spellcheck="false" type="search" name="buscar" id="buscar" autocomplete="off" />
+            </form>
+            <center>
+                <div id="Respuesta" class="box"></div>
+            </center>
+        </center>
+    </main>
+    <script src="./Scripts/admin.js"></script>
+
+</body>
+
+</html>

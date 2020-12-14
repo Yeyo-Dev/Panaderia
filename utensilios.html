@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utensilios</title>
+
+</head>
+
+
+<body>
+    <form method="POST" action="./Backend/Utensilios_ingresar.php">
+        <p>Identificador:</p><input type="text" name="idher" id="idher">
+        <p>Nombre:</p><input type="text" name="nombreh" id="nombreh">
+        <p>Precio(individual):</p><input type="number" name="precio" id="precio">
+        <p>Cantidad:</p><input type="number" name="cantidad" id="cantidad">
+
+        <p><button id="button" type="submit">Guardar</button></p>
+    </form>
+    <br><br><br><a href="./Backend/Utensilios_ConsGral.php">Consulta General</a>
+</body>
+
+</html>
