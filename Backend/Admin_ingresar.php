@@ -12,7 +12,7 @@
     $query = "INSERT INTO contabilidad( idcuentas, cuentas, valor, fecha)
     VALUES('$IDCuentas', '$Cuentas', '$Valor', '$Fecha')";
 
-    $resultado = $mysql->query($query);
+    $resultado = $mysqli->query($query);
 
  if($resultado){ 
          //se usa la funcion json_encode para enviarlo al js 

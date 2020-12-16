@@ -11,7 +11,7 @@ if (empty($buscar) || $buscar=""){
 	$sql = $busqueda;
 }
 
-$res=$mysql->query($sql);
+$res=$mysqli->query($sql);
 $totCuentas = mysqli_num_rows($res);
 
 

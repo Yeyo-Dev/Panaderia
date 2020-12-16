@@ -3,7 +3,7 @@
 
         $sql = "SELECT * FROM contabilidad WHERE idcuentas='". $id ."'";
 
-        $res = $mysql->query($sql);
+        $res = $mysqli->query($sql);
 
         $totCuentas = mysqli_num_rows($res);
         

@@ -12,7 +12,7 @@
 	
 	$query = "UPDATE contabilidad SET idcuentas='$id', cuentas='$cuenta', valor='$valor', fecha='$fecha' WHERE idcuentas='$id'";
 	
-	$resultado = $mysql->query($query);
+	$resultado = $mysqli->query($query);
     
 if($resultado > 0){
     echo "Modificacion Realizada";

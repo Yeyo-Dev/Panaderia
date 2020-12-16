@@ -157,7 +157,9 @@
         }
         
         body {
-            background-color: blue;
+       
+            background: -webkit-gradient(linear, 100%  30%, 100% 80%, from(blue), to(darkblue));
+        background-attachment: fixed;
         }
         
         .pestañas {

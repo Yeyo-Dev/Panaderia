@@ -6,7 +6,7 @@
 
  	$query='DELETE FROM contabilidad WHERE idcuentas=\''.$id.'\'';
 
-	$resultado=$mysql->query($query);
+	$resultado=$mysqli->query($query);
 
 	if($resultado>0){
 				

@@ -11,7 +11,7 @@
     $query = "INSERT INTO utensilios( idher, nombre, precio, cantidad)
     VALUES('$IDHER', '$Nombre', '$Precio', '$Cantidad')";
 
-    $resultado = $mysql->query($query);
+    $resultado = $mysqli->query($query);
 
  if($resultado){ 
          //se usa la funcion json_encode para enviarlo al js 

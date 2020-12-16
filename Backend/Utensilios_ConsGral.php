@@ -5,7 +5,7 @@
 require_once ("conexion.php");
 
 $sql = "SELECT * FROM utensilios ORDER BY idher ASC";
-$res=$mysql->query($sql);
+$res=$mysqli->query($sql);
 $tother = mysqli_num_rows($res);
 
 if ($tother>0) {
