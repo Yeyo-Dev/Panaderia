@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-image: url(../panaderia/imagenes/Pan.jpg);
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.Texto {
+    font-size: 30px;
+    color: black;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    
+}
+
+.Texto a {
+    size: 30px;
+    
+}

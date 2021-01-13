@@ -48,7 +48,7 @@ img{
         <h1>Error 404</h1>
         <p>Lo sentimos no hemos podido encontrar la pagina</p>
         <img src="./imagenes/wrong.gif" alt=":["> <br>      
-        <a href="./index.html">Volver al Login</a>
+        <a href="./Panaderia.html">Volver al Menu</a>
         </center>
     </div>
 </body>

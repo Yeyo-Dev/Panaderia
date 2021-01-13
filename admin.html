@@ -56,11 +56,15 @@
                 <script>
                     let f = new Date();
                     let dia = f.getDate();
+                    let mes = (f.getMonth() + 1);
                     if(dia < 10){
                         dia = `0${f.getDate()}`
                     } 
+                    if(mes < 10){
+                        mes = `0${mes}`
+                    } 
                     let fecha =
-                        f.getFullYear() + "-" + (f.getMonth() + 1) + "-" + dia;
+                        f.getFullYear() + "-" + mes + "-" + dia;
                     let VFecha = `<p>Fecha:</p><input required=" " type="date" name="Fecha" id="Fecha" value="${fecha}">`;
                     document
                         .getElementById("valor")

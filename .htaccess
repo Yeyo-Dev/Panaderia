@@ -1,4 +1,4 @@
-ErrorDocument 404 http://localhost/Panaderia/404.php
+ErrorDocument 404 http://localhost/Panaderia0/404.php
 
 RewriteBase /
 RewriteEngine On
